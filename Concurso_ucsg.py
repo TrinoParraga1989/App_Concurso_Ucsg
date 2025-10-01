@@ -3,7 +3,7 @@ import random
 import re
 from difflib import SequenceMatcher
 
-# Banco de 80 preguntas sobre la Independencia de Guayaquil
+# Banco de 80 preguntas sobre la Independencia de GuayaquiL
 # NOTA: Se ha ajustado la lista de preguntas para que coincida con el material de estudio
 # y se han incluido las palabras clave para una evaluación más flexible.
 questions = [
@@ -32,7 +32,7 @@ questions = [
     {"q": "¿Qué hacían los patriotas antes de iniciar la insurrección para no ser descubiertos?", "a": "Se reunían secretamente en casas particulares.", "keywords": ["reunian", "secretamente", "casas", "particulares"], "context": "Reuniones clandestinas. Revisa la página 7 del material."},
     {"q": "¿Quién escribió la proclama de independencia de Guayaquil?", "a": "José Joaquín de Olmedo", "keywords": ["jose joaquin", "olmedo", "proclama"], "context": "Intelectual de la independencia. Se menciona en la página 5 del material."},
     {"q": "¿Qué personaje fue clave como enlace entre criollos y tropas extranjeras?", "a": "José de Villamil", "keywords": ["jose", "villamil", "enlace", "criollos", "tropas"], "context": "Diplomacia insurgente. Revisa las páginas 1 y 7 del material."},
-    {"q": "¿Es cierto que la independencia de Guayaquil se logró sin derramamiento de sangre?", "a": "False", "keywords": ["falso", "no", "hubo", "victimas"], "context": "Según el material (p. 8), sí las hubo, aunque no tantas como pudieron darse. El concepto de 'incruenta' se usa, pero el material indica que sí hubo víctimas."},
+    {"q": "¿Es cierto que la independencia de Guayaquil se logró sin derramamiento de sangre?", "a": "True", "keywords": ["verdadero", "no", "hubo", "tantas", "victimas"], "context": "Según el material (p. 8), sí hubo derramamiento de sangre, pero no tantas como pudieron darse. El concepto de 'incruenta' se usa, aunque el material indica que sí hubo víctimas."},
     {"q": "¿Es verdadero que la Junta de Gobierno de Guayaquil reconoció inmediatamente la autoridad del virrey de Lima?", "a": "False", "keywords": ["falso", "no", "virrey"], "context": "Se proclamó gobierno propio. La página 5 del material explica la creación de un nuevo Estado."},
     {"q": "¿Qué diferencia existía entre el movimiento de Quito (1809) y el de Guayaquil (1820)?", "a": "Quito fue sofocado y Guayaquil consolidó su independencia.", "keywords": ["quito", "sofocado", "guayaquil", "consolidó", "independencia"], "context": "Resultados distintos. Puedes revisar las páginas 1, 5 y 8 del material para ver el éxito de la independencia de Guayaquil."},
     {"q": "¿Qué significaba para Guayaquil ser 'Provincia Libre'?", "a": "Autogobierno y soberanía temporal.", "keywords": ["provincia", "libre", "autogobierno", "soberania"], "context": "Concepto político inicial. Revisa la página 5 del material."},
@@ -176,3 +176,4 @@ else:
 
             st.write("---")
             st.write(f"### Puntaje actual: {st.session_state.score}/{st.session_state.current_question_index}")
+
