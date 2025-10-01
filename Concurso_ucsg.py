@@ -46,7 +46,7 @@ questions = [
     {"q": "¿Qué tipo de gobierno se instauró en Guayaquil tras la independencia?", "a": "Una república provisional.", "keywords": ["republica", "provisional"], "context": "Modelo político. La página 5 del material describe el nuevo Estado."},
     {"q": "¿Quiénes integraron la primera Junta de Gobierno?", "a": "Olmedo, Villamil, Febres Cordero, Letamendi (y otros vocales).", "keywords": ["olmedo", "villamil", "febres", "letamendi", "junta"], "context": "Nombres fundacionales. Revisa las páginas 5 y 6 del material."},
     {"q": "¿Qué ciudades se unieron rápidamente tras la independencia de Guayaquil?", "a": "Machala, Portoviejo, Daule.", "keywords": ["machala", "portoviejo", "daule"], "context": "Expansión inmediata. El material de estudio lo describe."},
-    {"q": "¿Qué tipo de soldados componían las milicias locales?", "a": "Pardos, criollos, campesinos (principalmente mestizos, mulatos y afrodescendientes en el Batallón de Pardos).", "keywords": ["pardos", "criollos", "campesinos", "milicias", "mestizos", "mulatos"], "context": "Diversidad social. Revisa la página 4 del material."},
+    {"q": "¿Qué tipo de soldados componían las milicias locales?", "a": "Pardos, campesinos (principalmente mestizos, mulatos y afrodescendientes en el Batallón de Pardos).", "keywords": ["pardos", "campesinos", "milicias", "mestizos", "mulatos"], "context": "Diversidad social. Revisa la página 4 del material."},
     {"q": "¿Es cierto que la independencia de Guayaquil influyó en la de Cuenca y Quito?", "a": "True", "keywords": ["verdadero", "si", "influyó", "cuenca", "quito"], "context": "Inspiración regional. El material de estudio lo sugiere."},
     {"q": "¿Qué fue la primera acción militar del ejército guayaquileño?", "a": "Luchar contra los españoles que estaban acantonados en un punto llamado \"Camino Real\" en el mes de noviembre de 1820.", "keywords": ["luchar", "españoles", "camino", "real", "noviembre", "1820"], "context": "Primera acción. La información se encuentra en la página 8 del material de estudio."},
     {"q": "¿A qué prócer de la independencia se le conoce como el precursor del movimiento emancipador guayaquileño?", "a": "Al prócer José de Antepara.", "keywords": ["jose", "antepara", "precursor"], "context": "Precursor. La información se encuentra en la página 8 del material de estudio."},
@@ -176,4 +176,5 @@ else:
 
             st.write("---")
             st.write(f"### Puntaje actual: {st.session_state.score}/{st.session_state.current_question_index}")
+
 
